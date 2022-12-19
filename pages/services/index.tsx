@@ -1,6 +1,6 @@
 import Head from "next/head";
 // import Image from "next/image";
-// import styles from "@/styles/ServicesPage.module.scss";
+// import s from "@/styles/ServicesPage.module.scss";
 
 export default function ServicesPage() {
   return (

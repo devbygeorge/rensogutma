@@ -1,6 +1,6 @@
 import Head from "next/head";
 // import Image from "next/image";
-// import styles from "@/styles/HomePage.module.scss";
+// import s from "@/styles/HomePage.module.scss";
 
 export default function HomePage() {
   return (

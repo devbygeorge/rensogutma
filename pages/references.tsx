@@ -1,6 +1,6 @@
 import Head from "next/head";
 // import Image from "next/image";
-// import styles from "@/styles/ReferencesPage.module.scss";
+// import s from "@/styles/ReferencesPage.module.scss";
 
 export default function ReferencesPage() {
   return (

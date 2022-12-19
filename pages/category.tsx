@@ -1,6 +1,6 @@
 import Head from "next/head";
 // import Image from "next/image";
-// import styles from "@/styles/CategoryPage.module.scss";
+// import s from "@/styles/CategoryPage.module.scss";
 
 export default function CategoryPage() {
   return (

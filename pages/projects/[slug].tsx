@@ -1,6 +1,6 @@
 import Head from "next/head";
 // import Image from "next/image";
-// import styles from "@/styles/ProjectPage.module.scss";
+// import s from "@/styles/ProjectPage.module.scss";
 
 export default function ProjectPage() {
   return (

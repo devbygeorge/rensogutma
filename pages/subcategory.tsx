@@ -1,6 +1,6 @@
 import Head from "next/head";
 // import Image from "next/image";
-// import styles from "@/styles/SubcategoryPage.module.scss";
+// import s from "@/styles/SubcategoryPage.module.scss";
 
 export default function SubcategoryPage() {
   return (
