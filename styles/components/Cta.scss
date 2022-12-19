@@ -1,0 +1,80 @@
+/*--------------------------------------------------------------
+# Call Now Section
+--------------------------------------------------------------*/
+.cta {
+  background: url("/images/cta.jpg") no-repeat center/cover;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  position: relative;
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-primary);
+  opacity: 0.9;
+}
+
+.cta .cta-text {
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 22px;
+}
+
+.cta .cta-info {
+  position: relative;
+  padding: 0;
+  border: 0;
+}
+
+.cta .cta-num {
+  display: block;
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.cta .cta-btn {
+  display: inline-block;
+
+  padding: 15px 25px;
+
+  font-size: 16px;
+  color: #fff;
+
+  border: 1px solid #fff;
+  border-radius: 45px;
+  transition: 0.5s;
+}
+
+.cta .cta-btn:hover {
+  background: #fff;
+  color: var(--color-accent);
+}
+
+@media (min-width: 991px) {
+  .cta {
+    text-align: left;
+  }
+
+  .cta .cta-text {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .cta .cta-info {
+    padding-left: 65px;
+    border-left: 1px solid #fff;
+  }
+
+  .cta .cta-num {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .cta .cta-btn {
+    margin-left: 26px;
+  }
+}

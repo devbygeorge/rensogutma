@@ -1,6 +1,5 @@
 import Head from "next/head";
 // import Image from "next/image";
-// import s from "@/styles/LawsPage.module.scss";
 
 export default function LawsPage() {
   return (

@@ -1,6 +1,5 @@
 import Head from "next/head";
 // import Image from "next/image";
-// import s from "@/styles/BlogPage.module.scss";
 
 export default function BlogPage() {
   return (

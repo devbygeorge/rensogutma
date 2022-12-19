@@ -1,0 +1,108 @@
+/*--------------------------------------------------------------
+# Products
+--------------------------------------------------------------*/
+.products .product-info {
+  min-height: 295px;
+  padding: 20px;
+}
+
+.products .product-img {
+  max-width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.products .product-title {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.products .product-link {
+  display: block;
+  position: relative;
+  padding: 20px 0;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.products .product-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  background: var(--color-primary);
+  transition: 0.5s;
+}
+
+.products .product-link span {
+  position: relative;
+  color: var(--color-primary);
+  transition: 0.5s;
+}
+
+.products .product-item:hover .product-img {
+  opacity: 0.9;
+}
+
+.products .product-item:hover .product-link::before {
+  height: 100%;
+}
+
+.products .product-item:hover .product-link span {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+  # Products Sidebar
+  --------------------------------------------------------------*/
+.products .sidebar h4 {
+  font-weight: 600;
+  color: var(--color-default);
+}
+
+.products .sidebar h5 {
+  font-weight: 600;
+  color: var(--color-default);
+  margin: 30px 0 14px;
+}
+
+.products .sidebar p {
+  font-size: 15px;
+  color: var(--color-secondary);
+}
+
+.products .sidebar-list {
+  background: #f9f9f9;
+  padding: 0;
+
+  border: solid 1px #dedede;
+  list-style: none;
+}
+
+.products .sidebar-item a {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 15px 20px;
+  font-size: 15px;
+  color: var(--color-secondary);
+
+  border-bottom: 1px dashed #cccccc;
+  transition: 0.3s;
+}
+
+.products .sidebar-item a:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.products .sidebar-item.active a {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.products .sidebar-item:last-child a {
+  border-bottom: none;
+}

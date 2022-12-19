@@ -1,6 +1,5 @@
 import Head from "next/head";
 // import Image from "next/image";
-// import s from "@/styles/ProductPage.module.scss";
 
 export default function ProductPage() {
   return (

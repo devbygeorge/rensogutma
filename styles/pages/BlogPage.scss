@@ -1,0 +1,90 @@
+/*--------------------------------------------------------------
+# news Details
+--------------------------------------------------------------*/
+.news .news-details {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.news .news-details .post-img {
+  margin: -30px -30px 20px -30px;
+  overflow: hidden;
+}
+
+.news .news-details .post-img img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+}
+
+.news .news-details .title {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 0;
+  margin: 20px 0 0 0;
+  color: var(--color-secondary);
+}
+
+.news .news-details .content {
+  margin-top: 20px;
+}
+
+.news .news-details .content h3 {
+  font-size: 16px;
+  margin: 24px 0;
+  font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+  # news Sidebar
+  --------------------------------------------------------------*/
+.news .sidebar {
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.news .sidebar .sidebar-title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  color: var(--color-secondary);
+}
+
+.news .sidebar .sidebar-item + .sidebar-item {
+  margin-top: 40px;
+}
+
+.news .sidebar .recent-posts .post-item {
+  display: flex;
+}
+
+.news .sidebar .recent-posts .post-item + .post-item {
+  margin-top: 15px;
+}
+
+.news .sidebar .recent-posts img {
+  max-width: 80px;
+  margin-right: 15px;
+}
+
+.news .sidebar .recent-posts h4 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.news .sidebar .recent-posts h4 a {
+  color: var(--color-secondary);
+  transition: 0.3s;
+}
+
+.news .sidebar .recent-posts h4 a:hover {
+  color: var(--color-primary);
+}
+
+.news .sidebar .recent-posts time {
+  display: block;
+  font-style: italic;
+  font-size: 14px;
+  color: rgba(54, 77, 89, 0.4);
+}

@@ -1,0 +1,156 @@
+/*--------------------------------------------------------------
+# Leave Comment Section
+--------------------------------------------------------------*/
+.leave-comment .content {
+  padding: 30px 0;
+}
+
+.leave-comment h3 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.leave-comment .content h3:before,
+.leave-comment .content h3:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+}
+
+.leave-comment .content h3:before {
+  width: 130px;
+  height: 2px;
+  background-color: #cccccc;
+}
+
+.leave-comment .content h3:after {
+  width: 30px;
+  height: 4px;
+  background-color: var(--color-primary);
+}
+
+.leave-comment .content h4 {
+  margin-bottom: 4px;
+}
+
+.leave-comment .content p {
+  font-size: 14px;
+}
+
+.leave-comment .email-form {
+  background: #fff;
+  padding: 30px;
+  height: 100%;
+}
+
+@media (max-width: 575px) {
+  .leave-comment .email-form {
+    padding: 20px;
+  }
+}
+
+.leave-comment .email-form h3 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.leave-comment .email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #df1529;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.leave-comment .email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.leave-comment .email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+.leave-comment .email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #059652;
+  border-top-color: #fff;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.leave-comment .email-form input,
+.leave-comment .email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 0;
+}
+
+.leave-comment .email-form input:focus,
+.leave-comment .email-form textarea:focus {
+  border-color: var(--color-primary);
+}
+
+.leave-comment .email-form input {
+  padding: 12px 15px;
+}
+
+.leave-comment .email-form textarea {
+  padding: 12px 15px;
+}
+
+.leave-comment .email-form button[type="submit"] {
+  background: var(--color-primary);
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.leave-comment .email-form button[type="submit"]:hover {
+  background: var(--color-primary-dark);
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

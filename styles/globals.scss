@@ -1,8 +1,359 @@
-.main {
+@forward "abstract/reset";
+@use "abstract/mixins" as mix;
+@use "abstract/functions" as fn;
+
+button {
+  color: inherit;
+  border: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Fonts */
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Work Sans", sans-serif;
+}
+
+/* Colors */
+:root {
+  --color-default: #364d59;
+  --color-primary: #3babff;
+  --color-primary-dark: #2e8bd3;
+  --color-secondary: #52565e;
+  --color-accent: #332f30;
+}
+
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: var(--font-default);
+  color: var(--color-default);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+
+/*--------------------------------------------------------------
+# Sections & Section Header
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f5f6f7;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  position: relative;
+  margin: 0;
+  padding-bottom: 30px;
+
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.section-header h2:before,
+.section-header h2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+}
+
+.section-header h2:before {
+  width: 130px;
+  height: 2px;
+  background-color: #cccccc;
+}
+
+.section-header h2:after {
+  width: 30px;
+  height: 4px;
+  background-color: var(--color-primary);
+}
+
+.section-header h2.left {
+  text-align: left;
+}
+
+.section-header h2.left:before,
+.section-header h2.left:after {
+  left: 0;
+  transform: none;
+}
+
+@media (max-width: 640px) {
+  .section-header h2 {
+    font-size: 22px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 50px 0;
+  position: relative;
+  background-image: url("/images/breadcrumbs.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs:before {
+  content: "";
+  background-color: rgba(25, 30, 30, 0.6);
+
+  position: absolute;
+  inset: 0;
+}
+
+.breadcrumbs h2 {
+  position: relative;
+  padding-bottom: 17px;
+  margin-bottom: 20px;
+
+  font-family: var(--font-secondary);
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.breadcrumbs h2:before,
+.breadcrumbs h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+}
+
+.breadcrumbs h2:before {
+  width: 130px;
+  height: 2px;
+  background-color: #cccccc;
+}
+
+.breadcrumbs h2:after {
+  width: 30px;
+  height: 4px;
+  background-color: var(--color-primary);
+}
+
+.breadcrumbs ol {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 10px 15px;
+  background: var(--color-primary);
+
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+
+  border-bottom-right-radius: 8px;
+  list-style: none;
+}
+
+.breadcrumbs ol a {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.breadcrumbs ol li:not(:last-child) {
+  padding-right: 10px;
+}
+
+.breadcrumbs ol li:not(:last-child)::after {
+  content: "\F285";
+  display: inline-block;
+  padding-left: 10px;
+
+  font-family: "Bootstrap-icons";
+  font-size: 11px;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .breadcrumbs .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .breadcrumbs h2 {
+    margin-bottom: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Posts Pagination
+--------------------------------------------------------------*/
+.posts-pagination {
+  margin-top: 30px;
+  color: #838893;
+}
+
+.posts-pagination ul {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.posts-pagination li {
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.posts-pagination li a {
+  color: var(--color-secondary);
+  padding: 7px 16px;
+  display: flex;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  justify-content: center;
+}
+
+.posts-pagination li.active,
+.posts-pagination li:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.posts-pagination li.active a,
+.posts-pagination li:hover a {
+  color: var(--color-white);
+}
+
+/*--------------------------------------------------------------
+# Scroll top button
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: var(--color-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background: var(--color-primary-dark);
+  color: #fff;
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.6s ease-out;
+}
+
+.preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #fff;
+  border-color: var(--color-primary) transparent var(--color-primary)
+    transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1.5s linear infinite;
+  animation: animate-preloader 1.5s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
 }

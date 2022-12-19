@@ -1,6 +1,5 @@
 import Head from "next/head";
 // import Image from "next/image";
-// import s from "@/styles/ContactPage.module.scss";
 
 export default function ContactPage() {
   return (

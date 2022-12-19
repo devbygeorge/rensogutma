@@ -1,0 +1,97 @@
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.services .service-item {
+  height: 100%;
+  background: #fff;
+  text-align: center;
+}
+
+.services .service-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.services .service-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  inset: 0;
+
+  padding: 0 50px;
+  background: rgba(150, 5, 62, 0.9);
+  color: white;
+
+  transform: perspective(400px) rotateX(-90deg);
+  transform-origin: top;
+  transition: 0.5s;
+}
+
+.services .service-footer {
+  position: relative;
+  padding: 25px 0;
+
+  border: 2px solid var(--color-primary);
+  border-top: none;
+}
+
+.services .service-footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  background: var(--color-primary);
+  transition: 0.5s;
+}
+
+.services .service-title {
+  position: relative;
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.services .service-title a {
+  color: var(--color-default);
+  transition: 0.5s;
+}
+
+.services .service-text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.services .service-btn {
+  padding: 10px 30px;
+  background: var(--color-accent);
+
+  font-size: 17px;
+  color: #fff;
+
+  border: none;
+  border-radius: 34px;
+  transition: 0.5s;
+}
+
+.services .service-item:hover .service-overlay {
+  transform: perspective(400px) rotateX(0deg);
+}
+
+.services .service-item:hover .service-footer::before {
+  height: 100%;
+}
+
+.services .service-item:hover .service-title a {
+  color: #fff;
+}
+
+.services .service-btn:hover {
+  background: var(--color-primary);
+}

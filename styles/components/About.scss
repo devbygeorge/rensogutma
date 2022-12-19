@@ -1,0 +1,51 @@
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about {
+  background-image: url("/images/pattern.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: calc(50% - 170px) 100%;
+  line-height: 1.8;
+}
+
+.about .section-header {
+  margin-bottom: 30px;
+}
+
+.about .watch-video i {
+  font-size: 32px;
+  transition: 0.3s;
+  color: var(--color-primary);
+}
+
+.about .watch-video a {
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin-left: 8px;
+  transition: 0.3s;
+}
+
+.about .watch-video:hover a {
+  color: var(--color-primary);
+}
+
+.about .about-img {
+  height: 360px;
+  background-image: url("/images/about/about.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 991px) {
+  .about {
+    background-position: top right;
+    background-size: 100% 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  .about {
+    padding-bottom: 0;
+  }
+}
