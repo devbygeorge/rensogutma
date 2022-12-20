@@ -124,7 +124,7 @@ export default function Header() {
                 <Link href="/laws">შინაგანაწესი</Link>
               </li>
               <li>
-                <Link href="/references">რეფერენსები</Link>
+                <Link href="/partners">პარტნიორები</Link>
               </li>
             </ul>
           </li>

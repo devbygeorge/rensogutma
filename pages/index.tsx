@@ -9,7 +9,7 @@ import FeaturedProducts from "@/components/FeaturedProducts";
 import ProductGroups from "@/components/ProductGroups";
 import RecentProjects from "@/components/RecentProjects";
 import LeaveComment from "@/components/LeaveComment";
-import ReferencesSwiper from "@/components/ReferencesSwiper";
+import PartnersSwiper from "@/components/PartnersSwiper";
 import RecentBlogs from "@/components/RecentBlogs";
 
 export default function HomePage() {
@@ -30,7 +30,7 @@ export default function HomePage() {
         <ProductGroups />
         <RecentProjects />
         <LeaveComment />
-        <ReferencesSwiper />
+        <PartnersSwiper />
         <RecentBlogs />
       </main>
       <Footer />

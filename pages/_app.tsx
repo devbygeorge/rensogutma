@@ -7,7 +7,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "glightbox/dist/css/glightbox.min.css";
 
 // import custom utilities
-import { initAOS } from "@/util/aos";
+import { initAOS } from "@/lib/aos";
 
 // import global & components styles
 import "@/styles/globals.scss";
@@ -21,7 +21,7 @@ import "@/styles/components/LeaveComment.scss";
 import "@/styles/components/ProductGroups.scss";
 import "@/styles/components/RecentBlogs.scss";
 import "@/styles/components/RecentProjects.scss";
-import "@/styles/components/ReferencesSwiper.scss";
+import "@/styles/components/PartnersSwiper.scss";
 import "@/styles/components/ServicePage.scss";
 
 // import pages styles

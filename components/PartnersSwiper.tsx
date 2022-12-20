@@ -8,9 +8,9 @@ import "swiper/css/autoplay";
 
 import Image from "next/image";
 
-export default function ReferencesSwiper() {
+export default function PartnersSwiper() {
   return (
-    <section className="references-swiper" id="references-swiper">
+    <section className="partners-swiper" id="partners-swiper">
       <Swiper
         loop={true}
         modules={[Autoplay]}
