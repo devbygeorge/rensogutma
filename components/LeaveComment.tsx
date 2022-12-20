@@ -1,6 +1,10 @@
 // import Image from "next/image";
 
 export default function LeaveComment() {
+  const handleSubmit = (e: React.FormEvent<EventTarget>) => {
+    e.preventDefault();
+  };
+
   return (
     <section className="leave-comment section-bg" id="leave-comment">
       <div className="container">
@@ -23,11 +27,7 @@ export default function LeaveComment() {
             </div>
           </div>
           <div className="col-lg-5" data-aos="fade">
-            <form
-              className="email-form"
-              action="/forms/quote.php"
-              method="post"
-            >
+            <form className="email-form" onSubmit={(e) => handleSubmit(e)}>
               <h3>დატოვე კომენტარი</h3>
               <div className="row gy-3">
                 <div className="col-md-12">
