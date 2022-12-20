@@ -10,7 +10,7 @@ import ProductGroups from "@/components/ProductGroups";
 import RecentProjects from "@/components/RecentProjects";
 import LeaveComment from "@/components/LeaveComment";
 import ReferencesSwiper from "@/components/ReferencesSwiper";
-import RecentNews from "@/components/RecentNews";
+import RecentBlogs from "@/components/RecentBlogs";
 
 export default function HomePage() {
   return (
@@ -31,7 +31,7 @@ export default function HomePage() {
         <RecentProjects />
         <LeaveComment />
         <ReferencesSwiper />
-        <RecentNews />
+        <RecentBlogs />
       </main>
       <Footer />
     </>

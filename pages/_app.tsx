@@ -19,7 +19,7 @@ import "@/styles/components/FeaturedProducts.scss";
 import "@/styles/components/Hero.scss";
 import "@/styles/components/LeaveComment.scss";
 import "@/styles/components/ProductGroups.scss";
-import "@/styles/components/RecentNews.scss";
+import "@/styles/components/RecentBlogs.scss";
 import "@/styles/components/RecentProjects.scss";
 import "@/styles/components/ReferencesSwiper.scss";
 import "@/styles/components/ServicePage.scss";
