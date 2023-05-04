@@ -48,7 +48,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Rensogutma - Welcome</title>
         <meta name="description" content="rensogutma" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
       </Head>
       <Component {...pageProps} />;
     </>
