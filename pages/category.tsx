@@ -5,10 +5,7 @@ export default function CategoryPage() {
   return (
     <>
       <Head>
-        <title>rensogutma - category page</title>
-        <meta name="description" content="rensogutma" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.png" />
+        <title>Rensogutma - Category Page</title>
       </Head>
       <main className="main">rensogutma category page</main>
     </>

@@ -18,10 +18,7 @@ export default function ServicePage() {
   return (
     <>
       <Head>
-        <title>rensogutma - service page</title>
-        <meta name="description" content="rensogutma" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.png" />
+        <title>Rensogutma - Service Item Page</title>
       </Head>
       <Header />
       <main className="main">

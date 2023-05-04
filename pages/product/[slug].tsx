@@ -5,10 +5,7 @@ export default function ProductPage() {
   return (
     <>
       <Head>
-        <title>rensogutma - product page</title>
-        <meta name="description" content="rensogutma" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.png" />
+        <title>Rensogutma - Product Item Page</title>
       </Head>
       <main className="main">rensogutma product page</main>
     </>

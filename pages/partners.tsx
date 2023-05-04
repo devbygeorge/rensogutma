@@ -12,10 +12,7 @@ export default function PartnersPage() {
   return (
     <>
       <Head>
-        <title>rensogutma - partners page</title>
-        <meta name="description" content="rensogutma" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.png" />
+        <title>Rensogutma - Partners Page</title>
       </Head>
       <Header />
       <main className="main">

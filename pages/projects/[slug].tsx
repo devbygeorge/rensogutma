@@ -31,10 +31,7 @@ export default function ProjectPage() {
   return (
     <>
       <Head>
-        <title>rensogutma - project page</title>
-        <meta name="description" content="rensogutma" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.png" />
+        <title>Rensogutma - Project Item Page</title>
       </Head>
       <Header />
       <main className="main">

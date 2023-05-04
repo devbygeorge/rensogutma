@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import type { AppProps } from "next/app";
+import Head from "next/head";
 
 // import vendor files
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -41,5 +42,15 @@ export default function App({ Component, pageProps }: AppProps) {
     initAOS();
   }, []);
 
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <title>Rensogutma - Welcome</title>
+        <meta name="description" content="rensogutma" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
+      <Component {...pageProps} />;
+    </>
+  );
 }

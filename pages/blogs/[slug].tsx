@@ -5,10 +5,7 @@ export default function BlogPage() {
   return (
     <>
       <Head>
-        <title>rensogutma - blog page</title>
-        <meta name="description" content="rensogutma" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.png" />
+        <title>Rensogutma - Blog Item Page</title>
       </Head>
       <main className="main">rensogutma blog page</main>
     </>
