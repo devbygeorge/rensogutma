@@ -45,8 +45,15 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Rensogutma - Welcome</title>
-        <meta name="description" content="rensogutma" />
+        <title>Rensogutma</title>
+        <meta
+          name="description"
+          content="The ultimate cooling systems for efficient temperature control and enhanced comfort."
+        />
+        <meta
+          name="google-site-verification"
+          content="rfe0IME65bo5IaFuGFKf1CNfc97ggGls50SMAgbCEf8"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" href="/images/favicon.png" />
       </Head>
